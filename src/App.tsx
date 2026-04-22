@@ -128,10 +128,6 @@ function Navbar({ lang, t, toggleLang, navigate }: { lang: Language, t: any, tog
         </div>
 
         <div className="hidden md:flex items-center gap-10">
-          <a href="#features" className={cn(
-            "uppercase font-bold opacity-60 hover:opacity-100 transition-opacity",
-            lang === 'ar' ? "text-xs tracking-normal" : "text-[10px] tracking-widest"
-          )}>{t.nav.features}</a>
           <div className="flex items-center gap-2 border-x border-black/5 px-6">
             <button 
               onClick={toggleLang}
